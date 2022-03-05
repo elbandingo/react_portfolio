@@ -39,7 +39,7 @@ function Header() {
             <Nav currPage={currPage} pageChange={pageChange}/>
             <main>
                 <div>
-                    
+                    {pageRender(currPage)}
                 </div>
             </main>  
         </div>
