@@ -24,11 +24,12 @@ function Contact() {
         const isValid = validateEmail(e.target.value);
         if(!isValid) {
             setErrMessage('that is an invalid email address');
+            console.log(errMessage);
         } else {
             setErrMessage('');
         }
     } else {
-        if (!e.target.vale.length) {
+        if (!e.target.value.length) {
             setErrMessage(`${e.target.name} is mandatory!`)
         } else {
             setErrMessage('');
@@ -43,40 +44,26 @@ function Contact() {
 }
 
 return (
-    
-    <div className="container py-4">
-    
-      
-      <form id="contactForm">
-    
-        
-        <div className="mb-3">
-          <label className="form-label" htmlFor="name">Name</label>
-          <input className="form-control" id="name" type="text" placeholder="Name" />
+    <div>
+      <p>Contact Me Today!</p>
+      <hr />
+      <form id="contact-form" onSubmit={submitHandler}>
+        <div className="field">
+          <label className="label" htmlFor="name">Name</label>
+          <input className="input" type="text" name="name" defaultValue={name} onBlur={formHandler} />
         </div>
-    
-        
-        <div className="mb-3">
-          <label className="form-label" htmlFor="emailAddress">Email Address</label>
-          <input className="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+        <div className="field">
+          <label className="label" htmlFor="email">Email Address</label>
+          <input className="input" type="email" name="email" defaultValue={email} onBlur={formHandler} />
         </div>
-    
-        
-        <div className="mb-3">
-          <label className="form-label" htmlFor="message">Message</label>
-          <textarea className="form-control" id="message" type="text" placeholder="Message"></textarea>
+        <div className="field">
+          <label className="label" htmlFor="message">Message</label>
+          <textarea className="textarea" name="message" rows="5" defaultValue={message} onBlur={formHandler} />
         </div>
-    
-        
-        <div className="d-grid">
-          <button className="btn btn-primary btn-lg" type="submit">Submit</button>
-        </div>
-    
+        <button className="button is-medium is-primary is-fullwidth" data-testid="button" type="submit">Submit</button>
       </form>
-    
     </div>
-)
-
+  );
 
 }
 
