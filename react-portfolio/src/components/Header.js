@@ -36,11 +36,15 @@ function Header() {
                     <a className="navbar-item" rel="noreferrer" target="_blank" href="#"><span className="content is-large">Adam Lewis Portfolio</span></a>
                 </div>
             </nav>
+            <Nav currPage={currPage} pageChange={pageChange}/>
+            <main>
+                <div>
+                    
+                </div>
+            </main>  
         </div>
+        
     );
-
-
-
 
 }
 
