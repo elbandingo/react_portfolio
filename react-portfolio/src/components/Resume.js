@@ -9,7 +9,7 @@ function Resume() {
                 <p className="">Résumé</p>
                 <hr />
 
-                <a className="btn btn-primary" href={process.env.PUBLIC_URL + "/resume.pdf"} target="_blank" rel="noreferrer">
+                <a className="btn btn-primary" href={process.env.PUBLIC_URL + '/resume.pdf'} download rel="noreferrer">
                 <span className="icon">
             <i className="fas fa-download"></i>
           </span>
@@ -19,6 +19,13 @@ function Resume() {
             <div className="col">
                 <p className="">Current Skills to Highlight</p>
                 <hr />
+                <ul>
+                    <li>HTML,CSS, JS</li>
+                    <li>GitHub</li>
+                    <li>MERN</li>
+                    <li>API</li>
+                    <li>Business Analytics</li>
+                </ul>
             </div>
         </div>
     )
