@@ -20,7 +20,7 @@ function Contact() {
 
     //function for handling changes in form, validating emails, and ensuring fields are filled out
     const formHandler = (e) => {
-    if(e.target.name === 'email') {
+    if(e.target.name === email) {
         const isValid = validateEmail(e.target.value);
         if(!isValid) {
             setErrMessage('that is an invalid email address');
