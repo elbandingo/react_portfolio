@@ -7,6 +7,10 @@ function Footer() {
             <p>
                 <b>Adam Lewis - Full Stack Web Development Portfolio 2022</b> - a React site by Adam Lewis
             </p>
+            <hr />
+            <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            |
+            <a href="mailto:elbandingo@protonmail.com" target="_blank" rel="noreferrer">Email Me</a>
         </div>
     </footer>
     );
