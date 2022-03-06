@@ -50,11 +50,11 @@ return (
       <form id="contact-form" className="d-block justify-content-center" onSubmit={submitHandler}>
         <div className="field d-block">
           <p>Name</p>
-          <input className="input" type="text" name="name" placeholder="enter your name" defaultValue={name} onBlur={formHandler} />
+          <input className="input text-center" type="text" name="name" placeholder="enter your name" defaultValue={name} onBlur={formHandler} />
         </div>
         <div className="field d-block">
         <p className="mt-3">Email</p>
-          <input className="input" type="email" name="email" placeholder="enter your email" defaultValue={email} onBlur={formHandler} />
+          <input className="input text-center" type="email" name="email" placeholder="enter your email" defaultValue={email} onBlur={formHandler} />
         </div>
         <div className="field d-block">
         <p className="mt-3">Message</p>
