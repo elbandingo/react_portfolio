@@ -44,7 +44,7 @@ function Contact() {
 }
 
 return (
-    <div className="bg-dark text-light text-center">
+    <div className="bg-dark text-light text-center p-5 vh-100">
       <p className="fs-2">Contact Me Today!</p>
       <hr />
       <form id="contact-form" onSubmit={submitHandler}>

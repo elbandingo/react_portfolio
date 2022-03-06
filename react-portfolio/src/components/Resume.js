@@ -4,12 +4,12 @@ import React from "react";
 //declare a function called Resume that returns the HTML elements and content
 function Resume() { 
     return (
-        <div className="row bg-dark text-light">
+        <div className="row bg-dark text-light vh-100">
             <div className="col ms-5 text-center">
                 <p className="fs-3 mt-3">Résumé</p>
                 <hr />
 
-                <a className="btn btn-danger" href={process.env.PUBLIC_URL + '/resume.pdf'} download rel="noreferrer">
+                <a className="btn btn-danger p-3 mt-4" href={process.env.PUBLIC_URL + '/resume.pdf'} download rel="noreferrer">
                 <span className="icon">
             <i className="fas fa-download"></i>
           </span>

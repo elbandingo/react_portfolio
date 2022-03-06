@@ -46,7 +46,7 @@ const projects = [
 
 function Portfolio() {
     return (
-        <div className="text-center bg-dark">
+        <div className="text-center bg-dark p-5">
             <h2>Portfolio</h2>
             <hr />
             <Project projects={projects} />
