@@ -44,23 +44,23 @@ function Contact() {
 }
 
 return (
-    <div className="bg-dark text-light text-center p-5 " style={{height: "1080px"}}>
+    <div className="bg-dark text-light text-center p-5" style={{height: "1080px"}}>
       <p className="fs-2">Contact Me Today!</p>
       <hr />
-      <form id="contact-form" onSubmit={submitHandler}>
-        <div className="field">
-          <label className="label" htmlFor="name">Name</label>
-          <input className="input" type="text" name="name" defaultValue={name} onBlur={formHandler} />
+      <form id="contact-form" className="d-block justify-content-center" onSubmit={submitHandler}>
+        <div className="field d-block">
+          <p>Name</p>
+          <input className="input" type="text" name="name" placeholder="enter your name" defaultValue={name} onBlur={formHandler} />
         </div>
-        <div className="field">
-          <label className="label" htmlFor="email">Email Address</label>
-          <input className="input" type="email" name="email" defaultValue={email} onBlur={formHandler} />
+        <div className="field d-block">
+        <p className="mt-3">Email</p>
+          <input className="input" type="email" name="email" placeholder="enter your email" defaultValue={email} onBlur={formHandler} />
         </div>
-        <div className="field">
-          <label className="label" htmlFor="message">Message</label>
-          <textarea className="textarea" name="message" rows="5" defaultValue={message} onBlur={formHandler} />
+        <div className="field d-block">
+        <p className="mt-3">Message</p>
+          <textarea className="textarea w-50" name="message" rows="5" defaultValue={message} onBlur={formHandler} />
         </div>
-        <button className="btn btn-danger" data-testid="button" type="submit">Submit</button>
+        <button className="btn btn-danger mt-3" data-testid="button" type="submit">Submit</button>
       </form>
     </div>
   );
