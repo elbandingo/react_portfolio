@@ -44,8 +44,8 @@ function Contact() {
 }
 
 return (
-    <div>
-      <p>Contact Me Today!</p>
+    <div className="bg-dark text-light text-center">
+      <p className="fs-2">Contact Me Today!</p>
       <hr />
       <form id="contact-form" onSubmit={submitHandler}>
         <div className="field">
@@ -60,7 +60,7 @@ return (
           <label className="label" htmlFor="message">Message</label>
           <textarea className="textarea" name="message" rows="5" defaultValue={message} onBlur={formHandler} />
         </div>
-        <button className="button is-medium is-primary is-fullwidth" data-testid="button" type="submit">Submit</button>
+        <button className="btn btn-danger" data-testid="button" type="submit">Submit</button>
       </form>
     </div>
   );

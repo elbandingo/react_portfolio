@@ -6,14 +6,14 @@ import React from "react";
 function Nav(props) {
     const tabArray = ["About", "Portfolio", "Contact", "Resume"];
     return (
-        <div className="tabs is-centered">
-            <ul className="nav nav-tabs">
+        <div>
+            <ul className="nav nav-tabs nav-fill justify-content-center bg-dark">
                 {tabArray.map((tab) => (
                     <li className={props.currPage === tab ? "nav-item is-active": "nav-item"
                 }
                 key={tab}
                 >
-                <a href={"#" + tab.toLowerCase()} onClick={() => props.pageChange(tab)} className={props.currPage === tab ? "nav-link active":"nav-link"}>
+                <a href={"#" + tab.toLowerCase()} onClick={() => props.pageChange(tab)} className={props.currPage === tab ? "nav-link active":"nav-link text-light"}>
                     {tab}
                 </a>
                 </li>

@@ -31,9 +31,9 @@ function Header() {
 
     return (
         <div>
-            <nav className="navbar">
+            <nav className="navbar d-block text-center bg-dark bg-gradient">
                 <div className="navbar-brand">
-                    <a className="navbar-item" rel="noreferrer" target="_blank" href="#"><span className="content is-large">Adam Lewis Portfolio</span></a>
+                    <a className="navbar-item text-decoration-none text-light fs-1" rel="noreferrer" target="_blank" href="https://github.com/elbandingo">Adam Lewis Portfolio</a>
                 </div>
             </nav>
             <Nav currPage={currPage} pageChange={pageChange}/>
