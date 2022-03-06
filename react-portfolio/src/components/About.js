@@ -2,7 +2,7 @@ import React from "react";
 //create function to return about me section
 function About() {
     return (
-        <div className="bg-dark p-5 vh-100">
+        <div className="bg-dark vh-100">
             <h2 className="fs-2 text-center text-light p-5">Welcome to my Page!</h2>
             <img className="rounded-circle mx-auto d-block" src={process.env.PUBLIC_URL + '/img/profile.jpg'} alt="Adam Lewis"/>
             <p className="text-center text-light p-5">Some text about myself is going to here as an introduction, and then below will be a more detailed Bio</p>
