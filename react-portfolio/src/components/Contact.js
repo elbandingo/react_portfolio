@@ -44,7 +44,7 @@ function Contact() {
 }
 
 return (
-    <div className="bg-dark text-light text-center p-5 vh-100">
+    <div className="bg-dark text-light text-center p-5 " style={{height: "1080px"}}>
       <p className="fs-2">Contact Me Today!</p>
       <hr />
       <form id="contact-form" onSubmit={submitHandler}>

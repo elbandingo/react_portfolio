@@ -4,8 +4,8 @@ import React from "react";
 //declare a function called Resume that returns the HTML elements and content
 function Resume() { 
     return (
-        <div className="row bg-dark text-light">
-            <div className="col ms-5 text-center vh-100">
+        <div className="row bg-dark text-light" style={{height: "1080px"}}>
+            <div className="col ms-5 text-center">
                 <p className="fs-3 mt-3">Résumé</p>
                 <hr />
 
